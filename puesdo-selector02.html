@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>가상선택자02</title>
+    <style>
+        /* input이 required 속성으로 지정되어 있다면... */
+        input:required {
+            border: 1px solid tomato;
+        } 
+
+       input[type="password"] {
+        background-color: tan;
+       } 
+
+       /*
+       input[placeholder ~="name"]{
+        background-color: darkturquoises;
+       }
+       */
+
+       input[placeholder ^= "name"]{
+        background-color: fuchsia;
+       }
+
+       input[placeholder $= "name"]{
+        background-color: yellowgreen;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <input type="text" placeholder="name user"/>
+            <input type="password" required placeholder="password"/>
+            <input type="text" placeholder="First name"/>
+        </form>
+    </div>
+</body>
+</html>

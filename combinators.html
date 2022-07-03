@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>combinators</title>
+    <style>
+        body{
+            height: 1000vh;
+            margin: 50px;
+            font-size: 20px;
+        }
+
+        span{
+            color: tomato;
+        }
+
+        p span {
+            color: magenta;
+        }
+        /* 또는 이렇게 모든 자식요소를 선택하고 싶을때 이 방법도 선택할 수 있다. 
+        div p span{
+            color:magenta;
+        }
+        */
+
+        /* 바로 밑에 오는 자식요소
+        div > span {
+            font-size: 50px;
+        }
+        */
+
+        p + span {
+            background-color: gold;
+        }
+
+        p ~ span {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>hello</span>
+        <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Fin</span>
+        </p>
+    </div>
+
+    <div>
+        <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Fin</span>
+        </p>
+        <address>hi</address>
+        <span>hello</span>
+    </div>
+</body>
+</html>
