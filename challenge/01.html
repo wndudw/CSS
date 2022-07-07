@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Challenge01</title>
+</head>
+
+<body>
+  <h1>Create An Account</h1>
+  <form>
+    <div>
+      <label>First name</label> <input type="text" required placeholder="First name" />
+    </div>
+    <div>
+      <label>Last name</label> <input type="text" required placeholder="Last name" />
+    </div>
+    <div>
+      <label>Email</label> <input type="email" required placeholder="Email"/>
+    </div>
+      <label>Username</label> <input type="text" required placeholder="Username" />
+    <div>
+      <label>Password</label> <input type="password" required minlength="10" placeholder="Password" />
+    </div>
+    <div>
+      <label>Birth date</label> <input type="date" />
+    </div>
+    <div>
+      <label>How happy are you?</label> <input type="range" list="rangelist" />
+      <datalist id="rangelist">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+      </datalist>
+    </div>
+    <div>
+      <label>What is your fav. color?</label> <input type="color" />
+    </div>
+    <button>Create Account</button>
+  </form>
+</body>
+</body>
+</html>
