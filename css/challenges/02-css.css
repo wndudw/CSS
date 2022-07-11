@@ -31,3 +31,60 @@ body{
     height: 60px;
     border: 4px dashed white;
 }
+
+/* 해설
+1. flex-direction과 메인 축, 교차 축
+flex와 함께 사용되는 속성인 justify-content 와 align-items는 각각 메인 축, 교차 축 정렬을 담당하는 속성입니다. 단순히 가로, 세로라고 생각하시면 오해하기 쉽습니다.
+기본적으로 flex의 하위 컨텐츠들은 메인 축에 따라 정렬됩니다.
+메인 축을 설정하는 속성이 바로, flex-direction입니다.
+default값은 row(행)로, 메인 축(justify-content)은 가로방향이 됩니다.
+flex-direction: row일 경우엔 메인 축(justify-content)이 가로, 교차 축(align-items)이 세로를 의미합니다.
+예시에선 내부 컨텐츠가 세로로 정렬되어있으므로, flex-direction을 column(열)으로 설정해야 합니다.
+flex-direction: column일 경우, 메인 축(justify-content)이 세로, 교차 축(align-items)이 가로를 의미하게 됩니다.
+
+2. 선택자 명시도
+하나의 요소에는 여러 class를 지정할 수 있습니다.
+css 선택자의 유형, 갯수, 순서 등에 따라 우선순위가 정해집니다.
+선택자의 범위가 명확할 수록 우선순위가 높습니다.
+
+3. border
+border 속성은 테두리에 대한 속성으로, color, style, width 세 하위 속성이 있습니다.
+border 속성 하나에 세 가지의 하위 속성을 모두 적용시킬 수 있지만, 예시와 같이 style만 바꾸고 싶다면 border-style 을 사용하면 됩니다.
+
+justify-content는 메인 축, align-items는 교차 축, flex-direction은 메인 축의 방향 이렇게 기억하시는 게 더 좋습니다.
+*/
+
+/* 노마드 솔루션
+body {
+  background:tomato;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.father{
+  width:200px;
+  height:200px;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background:wheat;
+  border:2px solid black;
+}
+
+.inside {
+  background:teal;
+  height:50px;
+  width:50px;
+  border:3px solid white;
+}
+
+.inside-second {
+  width: 100%;
+  border-style:dashed;
+}
+*/

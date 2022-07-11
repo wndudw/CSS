@@ -1,0 +1,46 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-div{  
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div div{
+    width: 300px;
+    height: 500px;
+    border: 5px solid white;
+    margin: 20px;
+}
+
+.main-div div:first-child > div{
+    background-color: tomato;
+}
+.main-div div:nth-child(2)>div{
+    background-color: teal;
+}
+.main-div div:nth-child(3)>div{
+    background-color: burlywood;
+}
+.main-div div:last-child>div{
+    background-color: thistle;
+}
+
+span{
+    background-color: white;
+    position: relative;
+    top:30px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+}
