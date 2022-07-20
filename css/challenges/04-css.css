@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-color: rgb(107,188,190);
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.square, .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square div{
+    width: 20px;
+    height: 60px;
+    margin: 5px;
+    background-color: white;
+}
+
+.circle div{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin: 50px;
+    border-radius: 90%;
+}
+.circle div:first-child{
+
+}
